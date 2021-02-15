@@ -1,0 +1,34 @@
+{
+  "name": "prettier-config-x",
+  "version": "0.0.1-dev",
+  "description": "TBD",
+  "author": "Christopher J. Brody <chris.brody+brodybits@gmail.com>",
+  "license": "(MIT OR Apache-2.0)",
+  "keywords": [
+    "prettier",
+    "prettier-config",
+    "prettierx",
+    "standard"
+  ],
+  "main": "index.js",
+  "files": [
+    "LICENSE-Apache-2.0.txt",
+    "LICENSE.md",
+    "README.md",
+    "index.js"
+  ],
+  "scripts": {
+    "test-js": "prettier --config=index.js --generator-star-spacing --check test-javascript.js",
+    "test-jsx": "prettier --config=index.js --offset-ternary-expressions --check test-jsx.jsx",
+    "test-ts": "prettier --config=index.js --generator-star-spacing --check test-typescript.ts",
+    "test-tsx": "prettier --config=index.js --offset-ternary-expressions --check test-tsx.tsx",
+    "test": "npm run test-js && npm run test-jsx && npm run test-tsx"
+  },
+  "peerDependencies": {
+    "prettier-plugin-x": "^0.0.6"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1",
+    "prettier-plugin-x": "^0.0.6"
+  }
+}
